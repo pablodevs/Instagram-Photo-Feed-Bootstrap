@@ -14,7 +14,7 @@ $ pip3 install flask && python3 server.py
 
 ## Authors ✒️
 
-* **Pablo Álamo** - *Coding* [peibol888](https://github.com/peibol888)
+* **Pablo Álamo** - *Coding* - [peibol888](https://github.com/peibol888)
 * **4Geeks-Academy** - *Support* - [4GeeksAcademy](https://github.com/4GeeksAcademy)
 
 ## License 📄
