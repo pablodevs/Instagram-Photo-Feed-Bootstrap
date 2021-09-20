@@ -63,34 +63,33 @@
         </nav>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <!-- Nav tabs -->
-        <div class="row">
+        <div class="row fix_error mx-0">
             <div class="col-12 d-flex justify-content-center">
                 <ul class="nav nav-pills my-2" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link btn active btn-outline-secondary border-0" data-bs-target="#pills-home"
-                            id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
-                            aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></button>
+                        <button class="nav-link pills_button active" f data-bs-target="#pills-grid"
+                            data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-grid"
+                            aria-selected="true"><i class="fas fa-th"></i></button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-outline-secondary border-0" data-bs-target="#pills-profile"
-                            id="pills-profile-tab" data-bs-toggle="pill" type="button" role="tab"
-                            aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></button>
+                        <button class="nav-link pills_button" data-bs-target="#pills-vertical" data-bs-toggle="pill"
+                            type="button" role="tab" aria-controls="pills-vertical" aria-selected="false"><i
+                                class="fas fa-square"></i></button>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- Tab panes -->
-        <div class="tab-content text-center" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                <!-- Contenido en formato rejilla -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+                <!-- Grid Style -->
                 <div class="container-fluid p-0">
-                    <div class="row">
+                    <div class="row mx-0">
                         <div class="col-4 p-1 zoom">
-                            <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17599_Fill_800_800.jpg"
+                            <img src="https://cdn.pocket-lint.com/r/s/1200x630/assets/images/145151-cameras-feature-astounding-images-from-the-depths-of-the-universe-courtesy-of-the-hubble-space-telescope-image1-bq4fawt8ek.jpg"
                                 alt="post" class="img_col">
                         </div>
                         <div class="col-4 p-1 zoom">
@@ -102,7 +101,7 @@
                                 alt="post" class="img_col">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-0">
                         <div class="col-4 p-1 zoom">
                             <img src="https://ca-times.brightspotcdn.com/dims4/default/87be6da/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
                                 alt="post" class="img_col">
@@ -116,14 +115,15 @@
                                 alt="post" class="img_col">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-0">
                         <div class="col-4 p-1 zoom">
                             <img src="https://imagenes.20minutos.es/files/article_amp/uploads/imagenes/2020/05/08/gato-siames.jpeg"
                                 alt="post" class="img_col">
                         </div>
-                        <div class="col-4 p-1 zoom">
-                            <img src="https://st4.depositphotos.com/20524830/26068/i/600/depositphotos_260689694-stock-photo-young-smiling-blond-female-outdoors.jpg"
-                                alt="post" class="img_col">
+                        <div class="col-4 p-1">
+                            <video
+                                src="https://player.vimeo.com/external/185248935.sd.mp4?s=f0c27f9af3d3596776e34cc2b24a670a720b95c7&profile_id=164&oauth2_token_id=57447761"
+                                type="video/mp4" loop autoplay muted class="img_col"></video>
                         </div>
                         <div class="col-4 p-1 zoom">
                             <img src="https://www.hola.com/imagenes/estar-bien/20200911175072/imagenes-animales-mas-divertidas/0-864-103/tigre-m.jpg"
@@ -133,8 +133,266 @@
                 </div>
             </div>
 
-            <!-- Contenido en formato vertical -->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">POSTS
+            <!--Vertical Style -->
+            <div class="tab-pane fade" id="pills-vertical" role="tabpanel" aria-labelledby="pills-vertical-tab">
+                <div class="container-fluid p-0 pt-5" style="background-color: rgb(220, 220, 220);">
+
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">1/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://cdn.pocket-lint.com/r/s/1200x630/assets/images/145151-cameras-feature-astounding-images-from-the-depths-of-the-universe-courtesy-of-the-hubble-space-telescope-image1-bq4fawt8ek.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">2/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">3/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">4/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://ca-times.brightspotcdn.com/dims4/default/87be6da/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">5/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://statics-cuidateplus.marca.com/cms/images/cafe-salud.jpg" alt="post"
+                                    class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">6/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2020/11/19043900/marieta-portada-1.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">7/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://cdn.pocket-lint.com/r/s/1200x630/assets/images/145151-cameras-feature-astounding-images-from-the-depths-of-the-universe-courtesy-of-the-hubble-space-telescope-image1-bq4fawt8ek.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">8/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <video
+                                    src="https://player.vimeo.com/external/185248935.sd.mp4?s=f0c27f9af3d3596776e34cc2b24a670a720b95c7&profile_id=164&oauth2_token_id=57447761"
+                                    type="video/mp4" loop autoplay muted class="img_col"></video>
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <div class="card mx-auto shadow-lg rounded p-0" style="width: 28rem;">
+                            <div class="card-body border-bottom-0 p-2 d-flex justify-content-between">
+                                <h5 class="card-title align-middle m-0">Card title</h5>
+                                <h6 class="card-title align-middle m-0">9/9</h6>
+                            </div>
+                            <div class="zoom">
+                                <img src="https://www.hola.com/imagenes/estar-bien/20200911175072/imagenes-animales-mas-divertidas/0-864-103/tigre-m.jpg"
+                                    alt="post" class="img_col">
+                            </div>
+                            <div class="card-body p-2">
+                                <div>
+                                    <p class="card-text"><strong>23 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="card-text py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Ex quasi, distinctio voluptatum fugiat, sit placeat optio, velit nesciunt
+                                        voluptatem laudantium atque culpa commodi.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 mb-2 d-flex justify-content-start">
+                                <div><i class="far fa-heart mx-3" style="color: rgb(189, 189, 189);"></i></div>
+                                <div>
+                                    <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
 
@@ -147,14 +405,15 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea class="form-control border-dark" id="message-text"></textarea>
                         </div>
                     </form>
                     <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera"></i></button>
                     <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i></button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-light text-dark" id="cancel_button" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-light text-dark" id="cancel_button"
+                        data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-success">Publish</button>
                 </div>
             </div>

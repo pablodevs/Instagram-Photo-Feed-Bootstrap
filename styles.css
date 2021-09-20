@@ -3,9 +3,15 @@
     min-height: 10px;
 } */
 
+div.row.fix_error {
+    --bs-gutter-x: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 /* Nav background color and fixed height */
 header {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(241, 241, 241);
     height:54px;
 }
 
@@ -42,3 +48,26 @@ header {
     background-color: rgb(220, 220, 220);
 }
 
+/* Pills styles */
+button.pills_button.nav-link {
+    background-color: white;
+    color: grey;
+}
+
+button.pills_button:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+button.pills_button:active {
+    color: white;
+}
+
+li.nav-item button.nav-link.active {
+    background-color: grey;
+}
+
+/* Cards styles */
+
+div.card {
+    border: none;
+}
