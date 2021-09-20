@@ -18,157 +18,149 @@
 
 <body>
 
-    <div class="container-fluid">
-        <!-- Header -->
-        <div class="row">
-            <nav class="container-fluid navbar border-0 nav_color">
-                <div class="container">
-                    <div>
-                        <a class="navbar-brand" href="#">
-                            <img src="logo.png" alt="logo" height="33" alt="" class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                    <div class="d-inline-flex">
 
-                        <!-- Modal -->
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">Create a new post
-                        </button>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="logo" height="33" alt="Instagram logo"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
 
-                        <!-- Modal card -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Understood</button>
-                                    </div>
+                <!-- Modal + Dropdown menu -->
+                <div class="d-inline-flex">
+
+                    <!-- Modal -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Create a new post</button>
+
+                    <!-- Modal card -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Dropdown menu -->
-
-                        <div class="dropdown d-flex justify-content-center">
-                            <button class="btn btn-outline-secondary dropdown-toggle nav_color border-0" type="button"
-                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-cog"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item active" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </nav>
-        </div>
 
-        <!-- 2 Tabs -->
+                    <!-- Dropdown menu -->
+
+                    <div class="dropdown d-flex justify-content-center">
+                        <button class="btn btn-outline-secondary dropdown-toggle nav_color border-0" type="button"
+                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid content">
         <!-- Nav tabs -->
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <ul class="nav nav-pills my-2" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link btn active btn-outline-secondary border-0" data-bs-target="#pills-home" id="pills-home-tab"
-                            data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-home"
-                            aria-selected="true"><i class="fas fa-th"></i></button>
+                        <button class="nav-link btn active btn-outline-secondary border-0" data-bs-target="#pills-home"
+                            id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
+                            aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-outline-secondary border-0" data-bs-target="#pills-profile" id="pills-profile-tab"
-                            data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false"><i class="fas fa-square"></i></button>
+                        <button class="nav-link btn btn-outline-secondary border-0" data-bs-target="#pills-profile"
+                            id="pills-profile-tab" data-bs-toggle="pill" type="button" role="tab"
+                            aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></button>
                     </li>
                 </ul>
             </div>
         </div>
+
         <!-- Tab panes -->
         <div class="tab-content text-center" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Hola
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <!-- Contenido en formato rejilla -->
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-4 p-1">
+                            <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17599_Fill_800_800.jpg"
+                                class="img_col" alt="post">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg"
+                                alt="post" class="img_col">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg"
+                                alt="post" class="img_col">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-1">
+                            <img src="https://ca-times.brightspotcdn.com/dims4/default/87be6da/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
+                                class="img_col" alt="post">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://statics-cuidateplus.marca.com/cms/images/cafe-salud.jpg" alt="post"
+                                class="img_col">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2020/11/19043900/marieta-portada-1.jpg"
+                                alt="post" class="img_col">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-1">
+                            <img src="https://imagenes.20minutos.es/files/article_amp/uploads/imagenes/2020/05/08/gato-siames.jpeg"
+                                class="img_col" alt="post">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://st4.depositphotos.com/20524830/26068/i/600/depositphotos_260689694-stock-photo-young-smiling-blond-female-outdoors.jpg"
+                                alt="post" class="img_col">
+                        </div>
+                        <div class="col-4 p-1">
+                            <img src="https://www.hola.com/imagenes/estar-bien/20200911175072/imagenes-animales-mas-divertidas/0-864-103/tigre-m.jpg"
+                                alt="post" class="img_col">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Adios
+
+            <!-- Contenido en formato vertical -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">POSTS
             </div>
         </div>
 
-
-
-
-
-
-        <ul class="nav nav-pills ">
-            <li class="nav-item">
-                <button class="nav-link btn active btn-outline-secondary pills_style" type="button">
-                    <i class="fas fa-th"></i>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link btn btn-outline-secondary pills_style" type="button">
-                    <i class="fas fa-square"></i>
-                </button>
-            </li>
-        </ul>
-
-
-    <!-- Contenido en rejilla -->
-    <div class="row">
-        <div class="col-4 p-1">
-            <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17599_Fill_800_800.jpg"
-                class="img_col" alt="post">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg"
-                alt="post" class="img_col">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg" alt="post"
-                class="img_col">
-        </div>
     </div>
-    <div class="row">
-        <div class="col-4 p-1">
-            <img src="https://ca-times.brightspotcdn.com/dims4/default/87be6da/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
-                class="img_col" alt="post">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://statics-cuidateplus.marca.com/cms/images/cafe-salud.jpg" alt="post" class="img_col">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2020/11/19043900/marieta-portada-1.jpg"
-                alt="post" class="img_col">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4 p-1">
-            <img src="https://imagenes.20minutos.es/files/article_amp/uploads/imagenes/2020/05/08/gato-siames.jpeg"
-                class="img_col" alt="post">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://st4.depositphotos.com/20524830/26068/i/600/depositphotos_260689694-stock-photo-young-smiling-blond-female-outdoors.jpg"
-                alt="post" class="img_col">
-        </div>
-        <div class="col-4 p-1">
-            <img src="https://www.hola.com/imagenes/estar-bien/20200911175072/imagenes-animales-mas-divertidas/0-864-103/tigre-m.jpg"
-                alt="post" class="img_col">
-        </div>
-    </div>
-    </div>
+
 
     <!-- Todos los <script> se cargan antes de </body> por buenas prácticas -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

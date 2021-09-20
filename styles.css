@@ -3,14 +3,17 @@
     min-height: 10px;
 } */
 
-.nav_color {
+/* Estilos para el header fixed-top */
+header {
     background-color: rgb(220, 220, 220);
+    height:54px;
 }
 
-.pills_style {
-    border: none;
+.content {
+    padding-top:54px;
 }
 
+/* Estilos para imágenes */
 .img_col {
     width: 100%;
     height: 300px;
