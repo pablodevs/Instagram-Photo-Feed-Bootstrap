@@ -8,7 +8,7 @@ $ pip3 install flask && python3 server.py
 
 ## Languages 🛠️
 
-* [Dropwizard](https://es.wikipedia.org/wiki/HTML5) - Text editor
+* [HTML](https://es.wikipedia.org/wiki/HTML5) - Text editor
 * [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Styles
 * [Bootstrap](https://getbootstrap.com/) - Styles
 
