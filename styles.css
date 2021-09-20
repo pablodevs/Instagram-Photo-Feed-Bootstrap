@@ -3,19 +3,42 @@
     min-height: 10px;
 } */
 
-/* Estilos para el header fixed-top */
+/* Nav background color and fixed height */
 header {
     background-color: rgb(220, 220, 220);
     height:54px;
 }
 
-.content {
-    padding-top:54px;
-}
-
-/* Estilos para imágenes */
+/* Images styles */
 .img_col {
     width: 100%;
     height: 300px;
     object-fit: contain;
 }
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom:hover img{
+    transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+}
+
+.zoom img {
+    transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     -webkit-transition: all 0.3s;
+}
+
+/* Cancel button inside Modal */
+#cancel_button {
+    border: solid 1px black;
+}
+
+#cancel_button:hover {
+    background-color: rgb(220, 220, 220);
+}
+
